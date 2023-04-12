@@ -55,3 +55,39 @@ void login(){
     }
 }
 
+void loading(){
+    system("cls");
+    int i;
+    printf("\n");
+    for (i = 0; i <= 27; i++){
+        printf("Loading... %d%%", i);
+        Sleep(50);
+        printf("\r");
+    }
+    for (i = 27; i <= 52; i++){
+        printf("Loading... %d%%", i);
+        Sleep(100);
+        printf("\r");
+    }
+    for (i = 52; i <= 70; i++){
+        printf("Loading... %d%%", i);
+        Sleep(250);
+        printf("\r");
+    }
+    for (i = 70; i <= 85; i++){
+        printf("Loading... %d%%", i);
+        Sleep(100);
+        printf("\r");
+    }
+    for (i = 85; i <= 100; i++){
+        printf("Loading... %d%%", i);
+        Sleep(50);
+        printf("\r");
+    }
+    sleep(1);
+    printf("Loading selesai.\n");
+    sleep(1);
+    printf("WELCOME!");
+    sleep(1);
+    Menu();
+}
